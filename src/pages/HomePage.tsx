@@ -272,21 +272,29 @@ export function HomePage() {
             </div>
             <div>
               <p className="font-medium text-[var(--color-text)] mb-1">
-                Q: Can I get source code of DYA Studio?
+                Q: Can I get the source code of Sofle Studio?
               </p>
               <p className="text-sm text-[var(--color-text-muted)]">
-                A: No, for now. DYA Studio is currently closed source to avoid
-                people relying on my heavily customized zmk-fork. If you have
-                feedback or feature request, please complaint on X with
+                A: Yes. Sofle Studio is open source under the{" "}
+                <strong>AGPL-3.0</strong> license — a fork of
                 <a
-                  href="https://x.com/intent/tweet?hashtags=dya_studio"
+                  href="https://github.com/cormoran/dya-studio"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline text-[var(--color-electric)] hover:text-[var(--color-neon)] transition-colors mx-1"
                 >
-                  #dya_studio
+                  DYA Studio
                 </a>
-                hashtag.
+                by cormoran. Browse the code or file feedback at
+                <a
+                  href="https://github.com/rdlu/sofle-studio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline text-[var(--color-electric)] hover:text-[var(--color-neon)] transition-colors mx-1"
+                >
+                  github.com/rdlu/sofle-studio
+                </a>
+                .
               </p>
             </div>
             <div>

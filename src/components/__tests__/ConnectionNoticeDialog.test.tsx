@@ -48,7 +48,7 @@ describe("ConnectionNoticeDialog", () => {
     );
 
     expect(screen.getByText("Connect via USB")).toBeInTheDocument();
-    expect(screen.getByText("Data Collection Notice")).toBeInTheDocument();
+    expect(screen.getByText("Privacy Notice")).toBeInTheDocument();
   });
 
   test("renders BLE connection dialog", () => {
@@ -172,7 +172,7 @@ describe("ConnectionNoticeDialog", () => {
       />,
     );
 
-    expect(screen.getByText("Data Collection Notice")).toBeInTheDocument();
+    expect(screen.getByText("Privacy Notice")).toBeInTheDocument();
     expect(screen.getByText("Agree to start")).toBeInTheDocument();
 
     userAgentSpy.mockRestore();

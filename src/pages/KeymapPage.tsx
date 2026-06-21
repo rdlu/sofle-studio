@@ -545,7 +545,7 @@ export function KeymapPage() {
                         <ul className="list-disc pl-4 space-y-1">
                           <li>
                             This setting only affects the visual key labels in
-                            DYA Studio web UI.
+                            Sofle Studio web UI.
                           </li>
                           <li>
                             Changing this does not update any firmware setting.
