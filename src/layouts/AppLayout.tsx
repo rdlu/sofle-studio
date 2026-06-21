@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { IconSun, IconMoon, IconPlugConnectedX } from "@tabler/icons-react";
-import DyaLogo from "../assets/dya.svg?react";
+import SofleLogo from "../assets/sofle.svg?react";
 import { useTheme } from "../hooks/useTheme";
 import type { ConnectionMethod } from "../components/DeviceConnection";
 
@@ -29,7 +29,7 @@ export function AppLayout({
       <header className="flex items-center justify-between px-6 py-4 border-b border-[var(--color-border)] bg-[var(--color-surface)]/80 backdrop-blur-sm transition-colors duration-300">
         {/* Logo & Brand */}
         <div className="flex items-center gap-4 flex-shrink-0 mr-4">
-          <DyaLogo className="w-8 h-8 [&_polygon]:fill-[var(--color-text)]" />
+          <SofleLogo className="w-8 h-8 [&_rect]:fill-[var(--color-text)]" />
           <div className="hidden sm:flex items-center gap-2">
             <span className="text-lg font-light tracking-widest text-[var(--color-text)]">
               Sofle
