@@ -2,7 +2,6 @@ import {
   IconBrandGithub,
   IconShoppingCart,
   IconFile,
-  IconBrandX,
   IconInfoCircle,
 } from "@tabler/icons-react";
 
@@ -17,13 +16,6 @@ import DYA2Img from "../assets/dya2/dya2.jpeg";
 import DYA2Img2 from "../assets/dya2/dya2-2.jpeg";
 
 const Dya2Images = [DYA2Img, DYA2Img2];
-
-const xShareContents = {
-  title: encodeURIComponent("DYA Studio for DYA & ZMK Keyboards"),
-  link: encodeURIComponent("https://studio.dya.cormoran.works"),
-  tags: "dya_studio,dy_kbd",
-};
-const xShareUrl = `https://twitter.com/intent/tweet?text=${xShareContents.title}&url=${xShareContents.link}&hashtags=${xShareContents.tags}`;
 
 export function HomePage() {
   return (
@@ -57,17 +49,6 @@ export function HomePage() {
                 </a>
               </p>
             </div>
-          </div>
-          <div className="ml-auto">
-            <a
-              href={xShareUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-3 py-1 rounded bg-[var(--color-electric)] text-white hover:bg-[var(--color-neon)] transition-colors text-xs font-semibold"
-              aria-label="Share on X"
-            >
-              Share on <IconBrandX size={16} className="ml-1" />
-            </a>
           </div>
         </div>
         <div className="mb-4 text-xs text-[var(--color-text-muted)] flex items-center gap-1">
