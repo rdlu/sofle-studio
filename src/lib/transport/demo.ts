@@ -102,8 +102,8 @@ const maxKeys = LAYOUTS.reduce(
 );
 const DEMO = {
   device: {
-    name: "DYA Keyboard (Demo)",
-    serialNumber: new Uint8Array([0x44, 0x59, 0x41, 0x44, 0x45, 0x4d, 0x4f]), // "DYADEMO"
+    name: "Sofle Keyboard (Demo)",
+    serialNumber: new Uint8Array([0x53, 0x4f, 0x46, 0x4c, 0x45]), // "SOFLE"
   },
   layouts: {
     activeLayoutIndex: 0,

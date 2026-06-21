@@ -5,6 +5,7 @@ import {
   useCallback,
   type ReactNode,
 } from "react";
+import { migrateLegacyKey } from "../lib/legacyStorageMigration";
 
 type Theme = "dark" | "light";
 
@@ -20,11 +21,13 @@ const ThemeContext = createContext<ThemeContextValue>({
   setTheme: () => {},
 });
 
-const STORAGE_KEY = "dya-studio-theme";
+const STORAGE_KEY = "sofle-studio-theme";
+const LEGACY_STORAGE_KEY = "dya-studio-theme";
 
 function getInitialTheme(): Theme {
   // Check localStorage first
   if (typeof window !== "undefined") {
+    migrateLegacyKey(LEGACY_STORAGE_KEY, STORAGE_KEY);
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored === "light" || stored === "dark") {
       return stored;

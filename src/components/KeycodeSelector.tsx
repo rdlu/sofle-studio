@@ -38,7 +38,7 @@ import { BehaviorParameterValueDescription } from "@zmkfirmware/zmk-studio-ts-cl
  */
 interface SelectedBehaviorInfo {
   behavior: BehaviorDefinition;
-  // metadata defined in DYA Studio for overriding values defined in ZMK firmware
+  // metadata defined in Sofle Studio for overriding values defined in ZMK firmware
   overrideMetadata: BehaviorMetadata | null;
   // List of valid value descriptions for param1
   param1Descriptions: BehaviorParameterValueDescription[];
@@ -71,7 +71,7 @@ function getParamTypeLabel(
   const overrideMeta = behaviorInfo.overrideMetadata;
   const overrideType =
     paramNumber === 1 ? overrideMeta?.param1Type : overrideMeta?.param2Type;
-  // From DYA Studio override metadata
+  // From Sofle Studio override metadata
   if (overrideType) {
     switch (overrideType) {
       case "mouse_keycode":
@@ -109,7 +109,7 @@ function getParamTypeDescription(
   paramNumber: 1 | 2,
 ): string {
   const overrideMeta = behaviorInfo.overrideMetadata;
-  // From DYA Studio override metadata
+  // From Sofle Studio override metadata
   if (overrideMeta) {
     const overrideDescription =
       paramNumber === 1
@@ -142,7 +142,7 @@ function formatParamValue(
   keyboardLayout?: KeyboardLayoutType,
 ): string {
   const behavior = behaviorInfo.behavior;
-  // From DYA Studio override metadata
+  // From Sofle Studio override metadata
   const overrideMeta = behaviorInfo.overrideMetadata;
   if (overrideMeta?.formatParam) {
     return overrideMeta.formatParam(param1, param2, paramNumber, {
@@ -462,7 +462,7 @@ export function KeycodeSelector({
       const overrideMeta = selectedBehaviorInfo?.overrideMetadata;
       const overrideType =
         paramNumber === 1 ? overrideMeta?.param1Type : overrideMeta?.param2Type;
-      // From DYA Studio override metadata
+      // From Sofle Studio override metadata
       if (overrideType) {
         switch (overrideType) {
           case "mouse_keycode":

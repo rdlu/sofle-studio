@@ -101,7 +101,7 @@ describe("DeviceConnection", () => {
 
       // Configure mocks for successful connection
       mocks.mockSuccessfulConnection({
-        deviceName: "DYA Keyboard",
+        deviceName: "Sofle Keyboard",
         subsystems: [],
       });
 
@@ -123,7 +123,7 @@ describe("DeviceConnection", () => {
 
       // Verify device name is displayed
       expect(screen.getByTestId("device-name")).toHaveTextContent(
-        "DYA Keyboard",
+        "Sofle Keyboard",
       );
     });
 
@@ -132,7 +132,7 @@ describe("DeviceConnection", () => {
 
       // Configure mocks for successful connection
       mocks.mockSuccessfulConnection({
-        deviceName: "DYA Keyboard",
+        deviceName: "Sofle Keyboard",
       });
 
       render(

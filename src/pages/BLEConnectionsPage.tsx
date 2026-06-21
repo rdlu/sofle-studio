@@ -416,8 +416,8 @@ export function BLEConnectionsPage() {
                     Change Output Priority?
                   </h3>
                   <p className="text-sm text-[var(--color-text-secondary)] mb-2">
-                    Changing the output priority may disconnect DYA Studio from
-                    your keyboard.
+                    Changing the output priority may disconnect Sofle Studio
+                    from your keyboard.
                   </p>
                   <p className="text-sm text-[var(--color-text-muted)]">
                     You will need to reconnect manually after the change.

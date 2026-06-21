@@ -48,7 +48,7 @@ describe("ConnectionNoticeDialog", () => {
     );
 
     expect(screen.getByText("Connect via USB")).toBeInTheDocument();
-    expect(screen.getByText("Data Collection Notice")).toBeInTheDocument();
+    expect(screen.getByText("Privacy Notice")).toBeInTheDocument();
   });
 
   test("renders BLE connection dialog", () => {
@@ -172,7 +172,7 @@ describe("ConnectionNoticeDialog", () => {
       />,
     );
 
-    expect(screen.getByText("Data Collection Notice")).toBeInTheDocument();
+    expect(screen.getByText("Privacy Notice")).toBeInTheDocument();
     expect(screen.getByText("Agree to start")).toBeInTheDocument();
 
     userAgentSpy.mockRestore();
@@ -198,7 +198,7 @@ describe("hasAcceptedNotice", () => {
     saveNoticeAcceptance("serial");
     expect(hasAcceptedNotice("serial")).toBe(true);
     mockLocalStorage.setItem(
-      "dya-studio-connection-notice-accepted-serial",
+      "sofle-studio-connection-notice-accepted-serial",
       "0.9.0",
     );
     expect(hasAcceptedNotice("serial")).toBe(false);
@@ -213,7 +213,7 @@ describe("saveNoticeAcceptance", () => {
   test("saves acceptance to localStorage", () => {
     saveNoticeAcceptance("ble");
     expect(
-      mockLocalStorage.getItem("dya-studio-connection-notice-accepted-ble"),
+      mockLocalStorage.getItem("sofle-studio-connection-notice-accepted-ble"),
     ).toBeTruthy();
   });
 });

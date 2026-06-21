@@ -79,14 +79,12 @@ export function ConnectionNoticeDialog({
                   size={18}
                   className="text-[var(--color-text-muted)]"
                 />
-                Data Collection Notice
+                Privacy Notice
               </h4>
               <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
-                DYA Studio collects your <strong>keyboard name</strong> for
-                usage analysis purposes. However,{" "}
-                <strong>no other keyboard data</strong> is sent to any servers.
-                All of your keyboard configurations, keymaps, or settings are
-                handled locally.
+                Sofle Studio runs <strong>entirely in your browser</strong>.
+                Your keyboard name, keymaps, and settings are handled locally
+                and are <strong>never sent to any server</strong>.
               </p>
             </div>
           )}
