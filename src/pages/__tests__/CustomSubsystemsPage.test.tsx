@@ -15,7 +15,7 @@ import { navigateTo } from "../../lib/navigate";
 const mockNavigateTo = navigateTo as jest.MockedFunction<typeof navigateTo>;
 
 // LocalStorage key used by the component
-const TRUSTED_URLS_KEY = "dya-studio-trusted-subsystem-urls";
+const TRUSTED_URLS_KEY = "sofle-studio-trusted-subsystem-urls";
 
 describe("CustomSubsystemsPage", () => {
   beforeEach(() => {

@@ -7,9 +7,11 @@ import {
 } from "@tabler/icons-react";
 import { ZMKAppContext } from "@cormoran/zmk-studio-react-hook";
 import { navigateTo } from "../lib/navigate";
+import { migrateLegacyKey } from "../lib/legacyStorageMigration";
 
 // LocalStorage key for trusted subsystem UI URLs
-const TRUSTED_URLS_KEY = "dya-studio-trusted-subsystem-urls";
+const TRUSTED_URLS_KEY = "sofle-studio-trusted-subsystem-urls";
+const LEGACY_TRUSTED_URLS_KEY = "dya-studio-trusted-subsystem-urls";
 
 function isValidUrl(value: string): boolean {
   try {
@@ -22,6 +24,7 @@ function isValidUrl(value: string): boolean {
 
 function getTrustedUrls(): Set<string> {
   try {
+    migrateLegacyKey(LEGACY_TRUSTED_URLS_KEY, TRUSTED_URLS_KEY);
     const stored = localStorage.getItem(TRUSTED_URLS_KEY);
     if (stored) {
       const parsed = JSON.parse(stored) as unknown;
