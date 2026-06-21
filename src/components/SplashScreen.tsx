@@ -115,7 +115,7 @@ export function SplashScreen({
           transition={{ duration: 1, delay: 0.5 }}
         >
           <h1 className="text-4xl font-light tracking-[0.3em] text-[var(--color-text)]">
-            DYA
+            Sofle
           </h1>
           <p className="text-sm font-light tracking-[0.2em] text-[var(--color-text-muted)] uppercase">
             Studio
@@ -254,7 +254,7 @@ export function SplashScreen({
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
       >
-        DYA Studio is maintained by
+        Sofle Studio — a fork of DYA Studio by
         <a
           href="https://x.com/cormoran707"
           target="_blank"

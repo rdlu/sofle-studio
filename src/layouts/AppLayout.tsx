@@ -32,7 +32,7 @@ export function AppLayout({
           <DyaLogo className="w-8 h-8 [&_polygon]:fill-[var(--color-text)]" />
           <div className="hidden sm:flex items-center gap-2">
             <span className="text-lg font-light tracking-widest text-[var(--color-text)]">
-              DYA
+              Sofle
             </span>
             <span className="text-xs font-light tracking-wider text-[var(--color-text-muted)] uppercase pt-1">
               Studio
